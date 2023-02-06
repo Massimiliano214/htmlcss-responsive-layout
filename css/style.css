@@ -49,6 +49,13 @@ header {
     text-align: center;
 }
 
+.us_desc_sx {
+    background-color: green;
+}
+
+.us_desc_dx {
+    background-color: blue;
+}
 /* fine debug */
 
 header {
@@ -130,6 +137,10 @@ main {
     margin-bottom: 20px;
 }
 
+.us_desc {
+    width: 100%;
+}
+
 @media screen and (min-width: 768px) {
     .container {
         max-width: 730px;
@@ -163,6 +174,17 @@ main {
     }
     .goods {
         width: calc((100% / 2) - 1.5rem);
+    }
+    .us_desc {
+        display: flex;
+        justify-content: space-between;
+    }
+    .us_desc_sx {
+        width: 52%;
+    }
+
+    .us_desc_dx {
+        width: 42%;
     }
 }
 
