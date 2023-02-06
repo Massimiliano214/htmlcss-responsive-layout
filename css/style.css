@@ -114,6 +114,22 @@ main {
     width: 100%;
 }
 
+.benefits {
+    width: 100%;
+    background-color: var(--option-color);
+}
+
+.goods_list {
+    width: 100%;
+}
+.goods{
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
 @media screen and (min-width: 768px) {
     .container {
         max-width: 730px;
@@ -138,6 +154,15 @@ main {
     }
     .t_right {
         width: 80%;
+    }
+
+    .goods_list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .goods {
+        width: calc((100% / 2) - 1.5rem);
     }
 }
 
@@ -165,5 +190,8 @@ main {
     .option_2 {
         max-width: 45%;
         margin-right: calc(5% / 2);
+    }
+    .goods {
+        width: calc((100% / 3) - 1.5rem);
     }
 }
