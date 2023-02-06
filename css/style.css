@@ -4,10 +4,40 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: sans-serif;
+}
+
 /* debug */
+.container {
+    background-color: black;
+}
 
-
-
+header * {
+    background-color: white;
+} 
 
 
 /* fine debug */
+
+.container {
+    max-width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 730px;
+        background-color: red;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        max-width: 970px;
+        background-color: black;
+    }
+}
