@@ -12,6 +12,7 @@ body {
     --header-color: #3582f7;
     --utility-color: #b6dcfd;
     --option-color: #7b72b2;
+    --footer-color: #363636;
 }
 
 /* debug */
@@ -56,6 +57,15 @@ header {
 .us_desc_dx {
     background-color: blue;
 }
+
+.trial_desc {
+    background-color: green;
+}
+
+.foot {
+    background-color: blue;
+}
+
 /* fine debug */
 
 header {
@@ -141,6 +151,24 @@ main {
     width: 100%;
 }
 
+.trial {
+    width: 100%;
+    background-color: var(--option-color);
+}
+
+.trial_desc {
+    text-align: center;
+    width: 100%;
+}
+
+footer {
+    background-color: var(--footer-color);
+}
+
+.foot {
+    text-align: center;
+}
+
 @media screen and (min-width: 768px) {
     .container {
         max-width: 730px;
@@ -185,6 +213,17 @@ main {
 
     .us_desc_dx {
         width: 42%;
+    }
+    .trial_desc {
+        text-align: center;
+        width: 100%;
+        width: 60%;
+        margin: auto;
+    }
+    .foot {
+        text-align: center;
+        width: 50%;
+        margin: auto;
     }
 }
 
