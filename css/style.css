@@ -11,6 +11,7 @@ body {
 :root {
     --header-color: #3582f7;
     --utility-color: #b6dcfd;
+    --option-color: #7b72b2;
 }
 
 /* debug */
@@ -18,9 +19,7 @@ header {
     height: 70px;
 }
 
-.container * {
-    background-color: white;
-} 
+
 
 .container {
     height: 100%;
@@ -28,6 +27,18 @@ header {
 
 .utility {
     height: 100px;
+    padding: 10px;
+}
+
+.option_1 {
+    
+    color: white;
+}
+
+.option_2 {
+    color: black;
+    
+    
 }
 /* fine debug */
 
@@ -61,6 +72,23 @@ main {
     margin-bottom: 10px;
 }
 
+.options {
+    width: 100%;
+    background-color: var(--option-color);
+}
+.option_1 {
+    width: 100%;
+    padding: 10px;
+    padding-bottom: 50px;
+}
+
+.option_2 {
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
 @media screen and (min-width: 768px) {
     .container {
         max-width: 730px;
@@ -70,11 +98,11 @@ main {
     .utility {
         width: calc(100% /3 - 1.5rem);
         justify-content: space-between;
-        margin: 0 0.75rem;
+        
         margin-bottom: 0.75rem;
     }
     .utility:first-child {
-        width: calc((100% /3) * 2 - 1.5rem);
+        width: calc((100% /3) * 2 - 0.75rem);
     }
 }
 
@@ -90,5 +118,17 @@ main {
     }
     .img_utility {
         max-width: 40%;
+    }
+    .option {
+        display: flex;
+        align-items: flex-end;
+    }
+    .option_1 {
+        max-width: 45%;
+        margin-left: calc(5% / 2);
+    }
+    .option_2 {
+        max-width: 45%;
+        margin-right: calc(5% / 2);
     }
 }
