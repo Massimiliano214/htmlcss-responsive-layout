@@ -40,12 +40,15 @@ header {
     background-color: var(--header-color);
 }
 .container {
-    max-width: 100%;
+    width: 100%;
     padding: 10px;
-    display: flex;
     justify-content: space-between;
     margin: auto;
     align-items: center; 
+}
+
+.flex {
+    display: flex;
 }
 
 main {
@@ -54,7 +57,6 @@ main {
 
 .utility {
     background-color: var(--utility-color);
-    margin: 0 10px;
     border-radius: 10px;
     margin-bottom: 10px;
 }
@@ -62,11 +64,31 @@ main {
 @media screen and (min-width: 768px) {
     .container {
         max-width: 730px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .utility {
+        width: calc(100% /3 - 1.5rem);
+        justify-content: space-between;
+        margin: 0 0.75rem;
+        margin-bottom: 0.75rem;
+    }
+    .utility:first-child {
+        width: calc((100% /3) * 2 - 1.5rem);
     }
 }
 
 @media screen and (min-width: 992px) {
     .container {
         max-width: 970px;
+    }
+    .utility:first-child {
+        display: flex;
+    }
+    .desc_utility {
+        max-width: 60%;
+    }
+    .img_utility {
+        max-width: 40%;
     }
 }
