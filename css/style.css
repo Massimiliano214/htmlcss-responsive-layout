@@ -26,6 +26,9 @@ header {
     height: 100%;
 }
 
+.utility {
+    height: 100px;
+}
 /* fine debug */
 
 header {
@@ -51,6 +54,9 @@ main {
 
 .utility {
     background-color: var(--utility-color);
+    margin: 0 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 @media screen and (min-width: 768px) {
