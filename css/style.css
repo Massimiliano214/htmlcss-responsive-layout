@@ -111,6 +111,7 @@ main {
     background-color: var(--option-color);
     border-radius: 10px;
     margin-bottom: 20px;
+    width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -135,7 +136,7 @@ main {
     .image {
         width: 20%;
     }
-    .t_list {
+    .t_right {
         width: 80%;
     }
 }
