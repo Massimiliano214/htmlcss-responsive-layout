@@ -246,9 +246,12 @@ footer {
     .utility {
         width: calc(100% /3 - 1.5rem);
         justify-content: space-between;
-        
         margin-bottom: 0.75rem;
     }
+    .img_utility {
+        width: 50%;
+        margin-left: 2rem;
+     }
     .utility:first-child {
         width: calc((100% /3) * 2 - 0.75rem);
     }
@@ -306,11 +309,12 @@ footer {
         display: flex;
     }
     .desc_utility {
-        max-width: 60%;
+        max-width: 50%;
     }
     .img_utility {
-        max-width: 40%;
-    }
+        width: 50%;
+        position: relative;
+     }
     .option {
         display: flex;
         align-items: flex-end;
