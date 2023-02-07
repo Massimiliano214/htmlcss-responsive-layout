@@ -409,6 +409,12 @@ footer {
 .spacebot{
     padding-bottom: 4rem;
 }
+.underline {
+    text-decoration: underline;
+}
+.col_purple {
+    color: var(--light-purple);
+}
 .foot {
     text-align: center;
 }
