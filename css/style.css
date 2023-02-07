@@ -14,6 +14,7 @@ body {
     --option-color: #7b72b2;
     --footer-color: #363636;
     --grey-color: #5b6e7d;
+    --light-purple: #9a8fdf;
 }
 
 /* debug */
@@ -39,7 +40,7 @@ header {
 
 
 .t_right {
-    width: 100%;
+    max-width: 100%;
     text-align: center;
 }
 
@@ -70,20 +71,45 @@ header {
     background-color: var(--header-color);
     height: 70px;
 }
-.container {
-    max-width: 100%;
+
+.container_head {
+    max-width: 90%;
     height: 100%;
-    padding: 0 30px;
+    padding: 0 10px;
     justify-content: space-between;
     margin: auto;
-    align-items: center; 
+}
+.container {
+    width: 90%;
+    height: 100%;
+    padding: 0 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
 }
 
 .header_sx {
-    display: flex;
     max-width: 20%;
+    align-items: center;
+    display: flex;
 }
 
+.header_dx {
+    display: flex;
+    max-width: 80%;
+    justify-content: flex-end;
+    line-height: 70px;
+}
+
+.head_list {
+    
+    display: flex;
+    align-items: center;
+}
 .image {
     text-align: center;
     max-width: 100%;
@@ -111,10 +137,6 @@ header {
     color: black;
     background-color: white;
     border-radius: 15px;
-}
-
-.flex {
-    display: flex;
 }
 
 main {
@@ -177,12 +199,13 @@ main {
 
 .center {
     text-align: center;
-    align-items: stretch;
+    
 }
 
 .options {
     width: 100%;
-    background-color: var(--option-color);
+    background-color: var(--light-purple);
+    padding-bottom: 4rem;
 }
 
 .option_1 {
@@ -190,14 +213,34 @@ main {
     padding: 10px;
     padding-bottom: 50px;
 }
-
-.option_2 {
-    width: 100%;
-    padding: 10px;
-    background-color: white;
-    border-radius: 10px;
+.piani {
+    font-size: 2.5rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 
+.piani_p {
+    line-height: 2rem;
+    font-size: 1.2rem;
+}
+
+.border {
+    border-radius: 50px;
+    background-color: white;
+    padding: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.freccia {
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem;
+    background-color: var(--light-purple);
+    padding: 1rem 1.2rem;
+    border-radius: 50%;
+}
 .testimonials {
     width: 100%;
 }
@@ -258,6 +301,9 @@ footer {
         display: flex;
         flex-wrap: wrap;
     }
+    .stretch {
+        align-items: stretch;
+    }
     .utility {
         width: calc(100% /3 - 1.5rem);
         justify-content: space-between;
@@ -312,7 +358,7 @@ footer {
 
 @media screen and (min-width: 992px) {
     .container {
-        max-width: 970px;
+        max-width: 1170px;
     }
     .pc_build {
         display: flex;
