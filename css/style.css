@@ -292,8 +292,37 @@ main {
     background-color: var(--option-color);
 }
 
-.goods_list {
+.container_goods {
     width: 100%;
+    padding-bottom: 2rem;
+}
+
+.space_up {
+    padding-top: 3rem;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 3rem;
+}
+
+.purple_num {
+    color: var(--light-purple);
+    font-size: 5rem;
+    padding: 2rem;
+}
+
+.purple_text {
+    font-size: 1.7rem;
+    color: var(--light-purple);
+    padding: 2rem;
+
+}
+
+.goods_p {
+    line-height: 2rem;
+    padding: 2rem;
+    font-size: 1.3rem;
+    color: var(--grey-color);
 }
 .goods{
     width: 100%;
@@ -301,6 +330,18 @@ main {
     background-color: white;
     border-radius: 10px;
     margin-bottom: 20px;
+    padding-bottom: 3rem;
+}
+
+.bottone_viola { 
+    margin: 4rem 2rem;
+    padding: 1rem 3rem;
+    background-color: var(--light-purple);
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
 }
 
 .us_desc {
