@@ -372,6 +372,32 @@ main {
     background-color: var(--option-color);
 }
 
+.t_white {
+    color: white;
+    padding-bottom: 2rem;
+}
+
+.orange {
+    font-size: 4rem;
+    color: orange;
+}
+
+.copy{
+    padding-top: 2rem;
+    color: white;
+    padding-bottom: 2rem;
+}
+.btn_white {
+    text-decoration: none;
+    color: var(--light-purple);
+    background-color: white;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    font-size: 2rem;
+}
+.t_space {
+    line-height: 1.5rem;
+}
 .trial_desc {
     text-align: center;
     width: 100%;
@@ -380,7 +406,9 @@ main {
 footer {
     background-color: var(--footer-color);
 }
-
+.spacebot{
+    padding-bottom: 4rem;
+}
 .foot {
     text-align: center;
 }
