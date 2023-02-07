@@ -243,16 +243,46 @@ main {
 }
 .testimonials {
     width: 100%;
+    
 }
 
+.space {
+    padding: 1rem 0;
+}
+
+.purple_h2 {
+    font-size: 2rem;
+    color: var(--light-purple);
+}
 .desc_t {
     text-align: center;
     width: 100%;
+    padding: 4rem 0;
 }
 
+.img_profilo {
+    margin-top: 2rem;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.t_p {
+    color: white;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+}
+
+.t_right h3 {
+    color: white;
+    padding-bottom: 2rem;
+}
 .t_list {
     background-color: var(--option-color);
-    border-radius: 10px;
+    border-radius: 50px;
     margin-bottom: 20px;
     width: 100%;
 }
@@ -322,6 +352,18 @@ footer {
     }
     .t_right {
         width: 80%;
+    }
+    .img_profilo {
+        margin: 1rem;
+    }
+    .t_p {
+        margin: 1rem;
+        text-align: left;
+        text-indent: 1rem;
+    }
+    .t_right h3 {
+        text-align: left;
+        text-indent: 1.7rem;
     }
 
     .goods_list {
