@@ -44,21 +44,7 @@ header {
     text-align: center;
 }
 
-.us_desc_sx {
-    background-color: green;
-}
 
-.us_desc_dx {
-    background-color: blue;
-}
-
-.trial_desc {
-    background-color: green;
-}
-
-.foot {
-    background-color: blue;
-}
 
 /* fine debug */
 
@@ -294,7 +280,7 @@ main {
 
 .container_goods {
     width: 100%;
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
 }
 
 .space_up {
@@ -344,10 +330,43 @@ main {
     margin-bottom: 4rem;
 }
 
+#btn_us {
+    font-size: 1rem;
+    margin: 1rem 0 0 2rem;
+    padding: 1rem;
+}
 .us_desc {
     width: 100%;
 }
 
+.us_desc h2 {
+    padding: 4rem 2rem 2rem;
+    font-size: 2rem;
+    color: var(--light-purple);
+}
+
+.us_desc_dx {
+    padding: 4rem 2rem 2rem;
+    font-size: 1rem;
+    color: var(--light-purple);
+}
+.us_p{
+    line-height: 2rem;
+    padding: 2rem;
+    font-size: 1.3rem;
+}
+
+.photo {
+    position: relative;
+}
+
+.ico_r {
+    position: absolute;
+    font-size: 4rem;
+    color: var(--light-purple);
+    left: 150px;
+    top: 20px;
+}
 .trial {
     width: 100%;
     background-color: var(--option-color);
@@ -420,11 +439,11 @@ footer {
         justify-content: space-between;
     }
     .us_desc_sx {
-        width: 52%;
+        width: 50%;
     }
 
     .us_desc_dx {
-        width: 42%;
+        width: 50%;
     }
     .trial_desc {
         text-align: center;
